@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+  <LinearLayout
+      android:id="@+id/two_linear1"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="@color/one_color"
+      android:orientation="horizontal">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:src="@drawable/yaohome_logo"/>
+    <Button
+        android:id="@+id/btn_job_find"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttom_find_job_style"
+        android:onClick="onClick"
+        android:text="@string/find_drug_pingpai"/>
+    <ImageView
+        android:id="@+id/two_fragment_sao"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="6dp"
+        android:src="@drawable/yaohome_sao"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/two_linear2"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_below="@id/two_linear1"
+      android:orientation="horizontal">
+
+    <ExpandableListView
+        android:id="@+id/two_classify_name_list"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:groupIndicator="@null">
+    </ExpandableListView>
+
+    <LinearLayout
+        android:id="@+id/two_linear3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@android:color/black">
+
+        <TextView
+            android:id="@+id/two_classify_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:text="健脾益肾"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/two_fengexian"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_below="@id/two_classify_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/hei"/>
+      </RelativeLayout>
+
+      <com.chanven.lib.cptr.PtrClassicFrameLayout
+          android:id="@+id/two_rotate_header_list_view_frame"
+          xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="#e1e1e1"
+          cube_ptr:ptr_duration_to_close="200"
+          cube_ptr:ptr_duration_to_close_header="1000"
+          cube_ptr:ptr_keep_header_when_refresh="true"
+          cube_ptr:ptr_pull_to_fresh="false"
+          cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+          cube_ptr:ptr_resistance="1.7">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/two_recyclerView_list"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+      </com.chanven.lib.cptr.PtrClassicFrameLayout>
+    </LinearLayout>
+  </LinearLayout>
+
+</RelativeLayout>

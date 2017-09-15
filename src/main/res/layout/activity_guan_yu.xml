@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/head"
+    >
+  <FrameLayout
+      android:id="@+id/frame"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+
+        >
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="@string/four_shezhi_guanyu"
+          android:textColor="@android:color/black"
+          android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/guanyureturn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_back_normal"
+        android:onClick="onClick"/>
+  </FrameLayout>
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_below="@id/frame"
+      android:scaleType="fitXY"
+      android:src="@drawable/hei" />
+
+  <com.example.yiyao.widget.StretchScrollView
+      android:id="@+id/scroll_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <ImageView
+          android:id="@+id/logo"
+          android:layout_width="60dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="107dp"
+          android:layout_marginTop="100dp"
+          android:src="@drawable/logo" />
+
+      <ImageView
+          android:id="@+id/logo1"
+          android:layout_width="80dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="87dp"
+          android:layout_toRightOf="@id/logo"
+          android:src="@drawable/shouyelogo"
+          />
+      <TextView
+          android:id="@+id/shezhi_guanyu_ml"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/logo"
+          android:layout_marginTop="2dp"
+          android:gravity="center_horizontal"
+          android:text="@string/four_shezhi_guanyu_ml"
+          android:textColor="@color/one_color"
+          android:textSize="11sp" />
+
+      <TextView
+          android:id="@+id/shezhi_guanyu_bb"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/shezhi_guanyu_ml"
+          android:layout_marginTop="10dp"
+          android:gravity="center_horizontal"
+          android:text="@string/four_shezhi_guanyu_bb" />
+
+      <ImageView
+          android:id="@+id/shezhi_guanyu_erweima"
+          android:layout_width="match_parent"
+          android:layout_height="120dp"
+          android:layout_below="@id/shezhi_guanyu_bb"
+          android:layout_marginTop="20dp"
+          android:foregroundGravity="center"
+          android:src="@drawable/erweima" />
+
+      <TextView
+          android:id="@+id/shezhi_guanyu_111"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/shezhi_guanyu_erweima"
+          android:layout_marginTop="20dp"
+          android:gravity="center"
+          android:text="@string/four_shezhi_guanyu_111"
+          android:textColor="@android:color/black"
+          android:textSize="16sp" />
+
+      <TextView
+          android:id="@+id/shezhi_guanyu_d"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/shezhi_guanyu_111"
+          android:layout_marginTop="20dp"
+          android:gravity="center_horizontal"
+          android:lineSpacingExtra="5dp"
+          android:text="@string/four_shezhi_guanyu_d"
+          android:textColor="@android:color/black"
+          android:textSize="12sp" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/shezhi_guanyu_d"
+          android:layout_marginTop="20dp"
+          android:gravity="center_horizontal"
+          android:text="@string/four_shezhi_guanyu_copy"
+          android:textSize="13sp" />
+    </RelativeLayout>
+  </com.example.yiyao.widget.StretchScrollView>
+</RelativeLayout>

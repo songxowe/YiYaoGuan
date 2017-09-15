@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@android:color/white"
+    >
+
+  <LinearLayout
+      android:id="@+id/linear1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      >
+
+
+    <ImageView
+        android:id="@+id/four_dingdan_iv_goods_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+
+
+      <TextView
+          android:id="@+id/four_dingdan_tv_goods_value"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:text="订单金额"
+          />
+
+      <TextView
+          android:id="@+id/four_dingdan_tv_goods_date"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/four_dingdan_tv_goods_value"
+          android:layout_marginTop="5dp"
+
+          android:text="订单日期"
+          />
+
+      <TextView
+          android:id="@+id/four_dingdan_tv_goods_state"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/four_dingdan_tv_goods_date"
+          android:layout_marginTop="5dp"
+
+          android:text="订单状态"
+          />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:src="@drawable/tiaozhuan"
+        />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_below="@id/linear1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:src="@drawable/xuxian"
+        />
+
+  </LinearLayout>
+
+  <Button
+      android:id="@+id/four_btn_zhi_fu"
+      android:layout_width="wrap_content"
+      android:layout_height="30dp"
+      android:layout_alignParentRight="true"
+      android:layout_below="@id/linear1"
+      android:layout_marginRight="@dimen/activity_horizontal_margin"
+      android:layout_marginTop="8dp"
+      android:background="@drawable/btn_kong_style"
+      android:text="@string/four_zhifu"
+      android:textColor="@color/one_color"
+      />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_alignParentBottom="true"
+      android:background="@color/head">
+  </LinearLayout>
+</RelativeLayout>

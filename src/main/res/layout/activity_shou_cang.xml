@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/now_sale">
+
+  <FrameLayout
+      android:id="@+id/frame"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        >
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="@string/four_shoucang"
+          android:textColor="@android:color/black"
+          android:textSize="18sp"
+          />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/shezhireturn"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:onClick="onClick"
+        android:padding="5dp"
+        android:src="@drawable/ease_back"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="12dp"
+        android:onClick="onClick"
+        android:src="@drawable/icon_shanchu"
+        />
+  </FrameLayout>
+
+  <ImageView
+      android:id="@+id/iv_xian"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_below="@id/frame"
+      android:scaleType="fitXY"
+      android:src="@drawable/hei"
+      />
+
+  <com.example.yiyao.widget.StretchScrollView
+      android:id="@+id/scroll_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/iv_xian"
+      android:background="@color/colorGray"
+      android:fillViewport="true"
+      >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/shenbao_recyclerView"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:visibility="visible"
+          >
+      </android.support.v7.widget.RecyclerView>
+
+      <ImageView
+          android:id="@+id/iv_wupinglun"
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="120dp"
+          android:src="@drawable/wupinglun"
+          android:visibility="gone"
+          />
+
+      <TextView
+          android:id="@+id/tv_wupinglun"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="300dp"
+          android:text="暂无收藏商品"
+          android:textColor="@color/gray_qian"
+          android:textSize="28dp"
+          android:visibility="gone"
+          />
+    </FrameLayout>
+  </com.example.yiyao.widget.StretchScrollView>
+
+
+</RelativeLayout>

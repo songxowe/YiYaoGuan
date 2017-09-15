@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".fourfragment.KaQuanActivity">
+
+  <FrameLayout
+      android:id="@+id/frame"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/white">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="@string/four_kaquan"
+          android:textColor="@android:color/black"
+          android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/kaquan_return"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_back_normal"
+        android:onClick="onClick"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="right">
+
+      <Button
+          android:id="@+id/shiyongshuoming"
+          style="?attr/borderlessButtonStyle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:onClick="onClick"
+          android:text="@string/four_kaquan_shiyong" />
+    </RelativeLayout>
+  </FrameLayout>
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_below="@id/frame"
+      android:scaleType="fitXY"
+      android:src="@drawable/hei" />
+
+  <LinearLayout
+      android:id="@+id/linear"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/hei" />
+
+    <Button
+        android:id="@+id/btn_tianjia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_style_green"
+        android:text="@string/four_tianjia"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+  </LinearLayout>
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/four_recycler_kaquan"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@id/linear"
+      android:layout_below="@id/frame"
+      android:layout_marginBottom="8dp"
+      android:layout_marginLeft="8dp"
+      android:layout_marginRight="8dp"
+      android:layout_marginTop="4dp">
+
+  </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

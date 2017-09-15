@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OneActivity.FindDrugActivity">
+
+  <RelativeLayout
+      android:id="@+id/relative"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:paddingBottom="5dp"
+      android:paddingLeft="@dimen/activity_horizontal_margin"
+      android:paddingRight="@dimen/activity_horizontal_margin"
+      android:paddingTop="8dp">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+       <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="取消"
+        android:textColor="@color/one_color"
+        android:textSize="16sp"
+        />
+      <FrameLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1">
+
+        <EditText
+            android:layout_marginLeft="4dp"
+            android:id="@+id/txt_input"
+            android:layout_width="320dp"
+            android:layout_height="35dp"
+            android:background="@drawable/edit_text_style"
+            android:hint="@string/find_drug_pingpai"
+            android:paddingLeft="40dp"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/icon_search_view"/>
+
+      </FrameLayout>
+
+      <TextView
+          android:id="@+id/drug_find"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_marginLeft="10dp"
+          android:text="搜索"
+          android:textColor="@color/one_color"
+          android:textSize="16sp"
+          />
+
+    </LinearLayout>
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/relative1"
+      android:layout_width="match_parent"
+      android:layout_height="0.3dp"
+      android:layout_below="@id/relative"
+      android:background="#a1a1a1"
+      >
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/relative2"
+      android:layout_width="match_parent"
+      android:layout_height="150dp"
+      android:layout_below="@id/relative1"
+      android:background="@color/colorGray"
+      android:padding="@dimen/activity_horizontal_margin"
+      >
+    <TextView
+        android:id="@+id/tv_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/find_job_hot_find"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/btn_ganmao"
+        style="@style/btn"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/tv_find"
+        android:background="@drawable/btn_style"
+        android:onClick="onClick"
+        android:text="@string/find_drug_ganmao"
+        />
+
+    <Button
+        android:id="@+id/btn_shenxu"
+        style="@style/btn"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/tv_find"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/btn_ganmao"
+        android:background="@drawable/btn_style"
+        android:onClick="onClick"
+        android:text="@string/find_drug_shenxu"
+        />
+    <Button
+        android:id="@+id/btn_jiedu"
+        style="@style/btn"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/tv_find"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/btn_shenxu"
+        android:background="@drawable/btn_style"
+        android:onClick="onClick"
+        android:text="@string/find_drug_jiedu"
+        />
+
+    <Button
+        android:id="@+id/btn_a_jiao"
+        style="@style/btn"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/tv_find"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/btn_jiedu"
+        android:background="@drawable/btn_style"
+        android:onClick="onClick"
+        android:text="@string/find_drug_ajiao"
+        />
+
+
+
+    <Button
+       android:id="@+id/btn_jiuzhitang"
+        android:layout_marginTop="8dp"
+        style="@style/btn"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/btn_ganmao"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_style"
+        android:onClick="onClick"
+        android:text="@string/find_drug_jiuzhitang"
+        />
+    <Button
+        android:id="@+id/btn_jianfeiyao"
+       android:layout_toRightOf="@id/btn_jiuzhitang"
+        android:layout_marginTop="8dp"
+        style="@style/btn"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/btn_ganmao"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_style"
+        android:onClick="onClick"
+        android:text="@string/find_drug_jianfeiyao"
+        />
+    <Button
+        android:layout_marginTop="8dp"
+        android:id="@+id/btn_fuke"
+        style="@style/btn"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/btn_ganmao"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/btn_jianfeiyao"
+        android:background="@drawable/btn_style"
+        android:onClick="onClick"
+        android:text="@string/find_drug_fuke"
+        />
+
+  </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/addres_relative"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+  <ImageView
+      android:layout_marginRight="30dp"
+      android:id="@+id/img_xiu"
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:layout_marginLeft="300dp"
+      android:layout_marginTop="7dp"
+      android:src="@drawable/adress_modified"/>
+
+  <Button
+      android:id="@+id/delete_address"
+      style="?android:borderlessButtonStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/img_xiu"
+     android:layout_marginLeft="270dp"
+      android:text="删除"/>
+
+  <ImageView
+      android:layout_width="25dp"
+      android:layout_height="25dp"
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="10dp"
+      android:src="@drawable/dizhi"/>
+
+  <TextView
+      android:id="@+id/u_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="60dp"
+      android:layout_marginTop="10dp"
+      android:text="刘文"
+      android:textAppearance="?android:attr/textAppearance"
+      android:textSize="15dp"/>
+
+  <TextView
+      android:id="@+id/u_phone"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="30dp"
+      android:layout_marginTop="10dp"
+      android:layout_toRightOf="@id/u_name"
+      android:text="13874940179"
+      android:textAppearance="?android:attr/textAppearance"
+      android:textSize="15dp"/>
+
+  <TextView
+      android:id="@+id/u_address"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/u_name"
+      android:layout_marginLeft="60dp"
+      android:layout_marginTop="10dp"
+      android:text="湖南省邵阳市邵东县"
+      android:textSize="15dp"/>
+
+  <ImageView
+      android:id="@+id/image_back"
+      android:layout_width="15dp"
+      android:layout_height="15dp"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:layout_marginRight="8dp"
+      android:src="@drawable/s_jr_ico"/>
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/now_sale"
+              android:layout_margin="4dp"
+              android:layout_width="180dp"
+              android:layout_height="265dp">
+
+  <ImageView
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="10dp"
+      android:src="@drawable/shenbao_one"
+      android:id="@+id/image_url"
+      android:layout_width="160dp"
+      android:layout_height="160dp"/>
+<TextView
+    android:singleLine="true"
+    android:ellipsize="end"
+    android:id="@+id/tv_drugName"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="3dp"
+    android:text="九芝堂肾宝 "
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+  <TextView
+      android:id="@+id/tv_drugPrice"
+      android:textSize="11dp"
+      android:layout_marginLeft="10dp"
+      android:text="￥789  "
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+  <FrameLayout
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="-9dp"
+      android:background="@color/gray"
+      android:layout_width="match_parent"
+      android:layout_height="1dp">
+  </FrameLayout>
+  </LinearLayout>
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+  <ImageView
+      android:layout_marginTop="-12dp"
+      android:layout_marginLeft="10dp"
+      android:src="@drawable/zhekou_chuxiaojia"
+      android:layout_width="40dp"
+      android:layout_height="40dp"/>
+    <TextView
+        android:textColor="@color/red"
+        android:id="@+id/tv_zhekouDrugPrice"
+        android:layout_marginLeft="4dp"
+        android:text="￥568.00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+  </LinearLayout>
+  <ImageView
+      android:id="@+id/image_buy"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="-20dp"
+      android:src="@drawable/zhekou_lijigoumai"
+      android:layout_width="140dp"
+      android:layout_height="50dp"/>
+</LinearLayout>

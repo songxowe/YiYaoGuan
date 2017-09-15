@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <FrameLayout
+      android:id="@+id/frame1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:background="@android:color/white"
+
+          >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/four_dingdan"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            />
+
+
+      </LinearLayout>
+
+      <ImageView
+          android:id="@+id/shezhireturn"
+          android:layout_width="45dp"
+          android:layout_height="30dp"
+          android:layout_gravity="center_vertical"
+          android:onClick="onClick"
+          android:padding="5dp"
+          android:src="@drawable/ease_back"/>
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:scaleType="fitXY"
+          android:src="@drawable/hei"
+          />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="48dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/hei"
+        />
+  </FrameLayout>
+
+
+  <com.chanven.lib.cptr.PtrClassicFrameLayout
+
+      android:id="@+id/rotate_header_list_view_frame"
+      xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/frame1"
+      android:layout_marginTop="1dp"
+      android:background="#e1e1e1"
+      cube_ptr:ptr_duration_to_close="200"
+      cube_ptr:ptr_duration_to_close_header="1000"
+      cube_ptr:ptr_keep_header_when_refresh="true"
+      cube_ptr:ptr_pull_to_fresh="false"
+      cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+      cube_ptr:ptr_resistance="1.7">
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/recycler_dingdan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+  </com.chanven.lib.cptr.PtrClassicFrameLayout>
+</RelativeLayout>

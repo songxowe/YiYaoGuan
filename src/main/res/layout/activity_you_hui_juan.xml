@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yiyao.OneActivity.YouHuiJuanActivity">
+
+  <RelativeLayout
+      android:id="@+id/top_bar"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:background="@color/now_sale"
+      >
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:text="@string/you_hui_juan_day"
+        android:textSize="18sp"/>
+    <ImageView
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_back_normal"
+        android:id="@+id/youhuijuan_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"/>
+  </RelativeLayout>
+
+</LinearLayout>

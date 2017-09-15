@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/four_tishi_lw"
+    android:gravity="center_horizontal"
+    android:textColor="@color/one_color"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:textAppearance="?android:textAppearanceLarge"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/four_shezhi_kefu_dialog_lw"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="20dp"
+    />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="20dp"
+      android:background="@color/one_color">
+
+  </LinearLayout>
+</LinearLayout>

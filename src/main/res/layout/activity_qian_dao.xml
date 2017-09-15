@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <FrameLayout
+      android:id="@+id/frame"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+
+        >
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/four_jifen"
+          android:layout_gravity="center"
+          android:textSize="18sp"
+          android:gravity="center"
+          android:textColor="@android:color/black"
+          />
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/shezhireturn"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ease_back"
+        android:padding="5dp"
+        android:onClick="onClick"/>
+
+  </FrameLayout>
+  <ImageView
+      android:id="@+id/iv_xian"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:src="@drawable/hei"
+      android:scaleType="fitXY"
+      android:layout_below="@id/frame"
+      />
+
+  <FrameLayout
+      android:layout_below="@id/iv_xian"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+
+        android:background="@android:color/white"
+        >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/four_jifen_ling"
+          android:paddingLeft="@dimen/activity_horizontal_margin"/>
+
+
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/daqiandao"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginLeft="2dp"
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/four_jifen_sum"
+          />
+    </LinearLayout>
+  </FrameLayout>
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/iv_xian"
+      android:layout_marginTop="24dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/four_jifen_qiandao_ok"
+        android:textSize="16dp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        />
+
+  </FrameLayout>
+</RelativeLayout>

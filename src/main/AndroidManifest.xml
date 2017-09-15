@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.example.yiyao"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+  <!-- 扫描的权限 -->
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+
+  <application
+      android:allowBackup="true"
+      android:icon="@drawable/icon"
+      android:label="@string/app_name"
+      android:supportsRtl="true"
+      android:theme="@style/AppTheme">
+
+    <!-- start QQ Activity -->
+    <activity
+        android:name="com.tencent.connect.common.AssistActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    <activity
+        android:name="com.tencent.tauth.AuthActivity"
+        android:launchMode="singleTask"
+        android:noHistory="true">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+
+        <data android:scheme="tencent222222"/>
+        <!-- 100380359 100381104 222222 自己的 APP_ID 替换 222222 -->
+      </intent-filter>
+    </activity>
+    <!-- end QQ Activity -->
+
+    <activity android:name=".SplashActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity android:name=".OneActivity.FindDrugActivity">
+    </activity>
+    <activity android:name=".OneActivity.ResultFindActivity">
+    </activity>
+    <activity android:name=".OneActivity.FindGanmaoActivity">
+    </activity>
+    <activity android:name=".OneActivity.FindXiaoHuaActivity">
+    </activity>
+    <activity android:name=".OneActivity.FindWaikeActivity">
+    </activity>
+    <activity android:name=".OneActivity.FindFuKeActivity">
+    </activity>
+    <activity android:name=".OneActivity.FindHuXiActivity">
+    </activity>
+    <activity android:name=".OneActivity.YouHuiJuanActivity">
+    </activity>
+    <activity android:name=".PingPaiActivity.SerarchGanMaoActivity">
+    </activity>
+    <activity android:name=".PingPaiActivity.SearchShenBaoActivity">
+    </activity>
+    <activity android:name=".PingPaiActivity.SearchAjiaoActivity">
+    </activity>
+    <activity android:name=".PingPaiActivity.SearchTongrentangActivity">
+    </activity>
+    <activity android:name=".OneActivity.ShowProductActivity">
+    </activity>
+    <activity android:name=".ThreeActivity.CheckOutActivity">
+    </activity>
+    <activity android:name=".MainActivity">
+    </activity>
+    <activity android:name=".LoginActivity">
+    </activity>
+    <activity android:name=".RegisterActivity">
+    </activity>
+    <activity android:name=".ThreeActivity.AddressActivity">
+    </activity>
+    <activity android:name=".ThreeActivity.AddaddressActivity">
+    </activity>
+    <activity android:name=".ThreeActivity.UpdateAddressActivity">
+    </activity>
+    <activity android:name=".zxing.activity.CaptureActivity">
+    </activity>
+    <activity android:name=".WebViewActivity">
+    </activity>
+    <activity android:name=".fourFragment.QianDaoActivity">
+    </activity>
+    <activity android:name=".fourFragment.SheZhiActivity">
+    </activity>
+    <activity android:name=".fourFragment.ShouCangActivity">
+    </activity>
+    <activity android:name=".fourFragment.KaQuanActivity">
+    </activity>
+    <activity android:name=".fourFragment.YiJianActivity">
+    </activity>
+    <activity android:name=".fourFragment.DaiZhiFuActivity">
+    </activity>
+    <activity android:name=".fourFragment.DingDanActivity">
+    </activity>
+    <activity android:name=".fourFragment.DingDanXiangQingActivity">
+    </activity>
+    <activity android:name=".fourFragment.DaiShouHuoActivity">
+    </activity>
+    <activity android:name=".fourFragment.DaiPingLunActivity">
+    </activity>
+    <activity android:name=".fourFragment.GuanYuActivity">
+    </activity>
+    <activity android:name=".fourFragment.WoDeZhangHaoActivity">
+    </activity>
+    <activity android:name=".fourFragment.YiJian_ShiYongActivity">
+    </activity>
+    <activity android:name=".fourFragment.ShouHouActivity">
+    </activity>
+    <activity android:name=".fourFragment.successActivity">
+    </activity>
+  </application>
+
+</manifest>

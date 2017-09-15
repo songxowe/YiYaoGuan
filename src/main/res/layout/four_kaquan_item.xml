@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="110dp">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/youhuijuan1"/>
+    <TextView
+        android:id="@+id/tv_kaquan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/four_kaquan_5"
+        android:textSize="18sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="82dp"
+        />
+    <TextView
+        android:id="@+id/tv_kaquan_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/four_kaquan_time"
+        android:layout_marginTop="54dp"
+        android:layout_marginLeft="82dp"
+        />
+</FrameLayout>
+</LinearLayout>

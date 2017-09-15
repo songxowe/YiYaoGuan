@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+  <LinearLayout
+      android:id="@+id/show_pingjia_linear1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+      android:layout_marginTop="20dp"
+      android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_good_pingjia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/pingjia_dianji"
+        android:gravity="center_horizontal"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:text="好评（0）"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_normal_pingjia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/pingjia_dianji"
+        android:gravity="center_horizontal"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:text="中评（0）"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_bad_pingjia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/pingjia_dianji"
+        android:gravity="center_horizontal"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:text="差评（0）"
+        android:textSize="20sp" />
+  </LinearLayout>
+
+  <com.example.yiyao.widget.MyListView
+      android:id="@+id/pingjia_list"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/show_pingjia_linear1"
+      android:layout_marginLeft="8dp"
+      android:layout_marginRight="8dp"
+      android:layout_marginTop="16dp">
+  </com.example.yiyao.widget.MyListView>
+
+</RelativeLayout>

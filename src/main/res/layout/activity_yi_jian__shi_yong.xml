@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <FrameLayout
+      android:id="@+id/frame"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+
+        >
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="@string/four_kaquan_shiyong"
+          android:textColor="@android:color/black"
+          android:textSize="18sp"
+          />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/shezhireturn"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+
+        android:onClick="onClick"
+        android:padding="5dp"
+        android:src="@drawable/ease_back"/>
+
+  </FrameLayout>
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_below="@id/frame"
+      android:scaleType="fitXY"
+      android:src="@drawable/hei"
+      />
+
+  <com.example.yiyao.widget.StretchScrollView
+      android:id="@+id/scroll_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/frame"
+
+
+      android:fillViewport="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:lineSpacingExtra="8dp"
+        android:paddingRight="5dp"
+        android:text="@string/four_kaquan_shiyong_neirong"
+        />
+  </com.example.yiyao.widget.StretchScrollView>
+</RelativeLayout>

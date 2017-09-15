@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/two_image_url"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/shenbao_one" />
+
+    <LinearLayout
+        android:id="@+id/two_recyclerView_item_linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/two_more"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="8dp"
+            android:src="@drawable/point_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/two_recyclerView_item_linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@id/two_recyclerView_item_linear2"
+        android:layout_toRightOf="@id/two_image_url"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/two_goods_name"
+            style="@android:style/TextAppearance.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="汇仁  肾宝片"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/two_goods_symptom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="症状:治肾亏，用肾宝，一个顶两，OhYeah！"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/two_goods_price"
+            style="@android:style/TextAppearance.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="金额：￥123.00"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/two_fengexian"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/hei" />
+</RelativeLayout>

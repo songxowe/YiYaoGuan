@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/head"
+              android:orientation="vertical"
+              tools:context="com.example.yiyao.OneFragment.PingPaiFragment">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="-38dp"
+          android:src="@drawable/pingpai_teihui"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="-20dp"
+          android:text="@string/ping_pai_ganmao"/>
+
+      <ImageView
+          android:id="@+id/pingpai_ganmao"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="-40dp"
+          android:src="@drawable/pingpai_ganmao"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="-35dp"
+          android:text="@string/ping_pai_shenbao"/>
+
+      <ImageView
+          android:id="@+id/pingpai_shenbao"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/pingpai_shenbao"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="6dp"
+          android:text="@string/ping_pai_a_jiao"/>
+
+      <ImageView
+          android:id="@+id/pingpai_a_jiao"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="-38dp"
+          android:src="@drawable/pingpai_a_jiao"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="-36dp"
+          android:text="@string/ping_pai_tongrentang"/>
+
+      <ImageView
+          android:id="@+id/pingpai_tongrentang"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="-40dp"
+          android:src="@drawable/pingpai_tongrentang"/>
+    </LinearLayout>
+
+
+  </ScrollView>
+
+
+</LinearLayout>

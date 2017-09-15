@@ -1,0 +1,144 @@
+<resources>
+  <string name="app_name">111医药馆</string>
+
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="now_sale_register">新会员注册即送价值160元现金劵大礼包</string>
+
+  <string name="yi_yao_man">男性</string>
+  <string name="yi_yao_woman">女性</string>
+  <string name="yi_yao_oldman">老人</string>
+  <string name="yi_yao_child">小孩</string>
+  <string name="find_drug_pingpai">搜索药品/品牌/症状</string>
+  <string name="find_job_hot_find">热门搜索</string>
+  <string name="find_drug_ganmao">感冒</string>
+  <string name="find_drug_ajiao">阿胶</string>
+  <string name="find_drug_shenxu">肾虚</string>
+  <string name="find_drug_xiaoyan">抗菌消炎</string>
+  <string name="find_drug_jiedu">清热解毒</string>
+  <string name="find_drug_fuke">妇科</string>
+  <string name="find_drug_jiuzhitang">九芝堂</string>
+  <string name="find_drug_jianfeiyao">减肥药</string>
+  <string name="you_hui_juan_day">每日领卷</string>
+  <string name="ping_pai_ganmao">999感冒灵专区</string>
+  <string name="ping_pai_tongrentang">同仁堂专区</string>
+  <string name="ping_pai_shenbao">九芝堂专区</string>
+  <string name="ping_pai_a_jiao">东阿阿胶专区</string>
+  <string name="show_7day">7天无理由退换货</string>
+  <string name="show_yunshu">全程冷藏运输</string>
+  <string name="show_99">订单满99免邮费</string>
+  <string name="show_zhenping">真品假一罚十</string>
+  <string name="show_city">全国规模化采购</string>
+  <string name="show_more">往下拉可查看更多</string>
+
+  <string name="menu_edit">编辑</string>
+  <string name="menu_enter">完成</string>
+  <string name="menu_del">删除</string>
+  <string name="menu_sett">结算</string>
+
+
+  <string name="four_gerenzhongxin">个人中心</string>
+  <string name="four_nicheng">我的昵称：</string>
+  <string name="four_dingdan">全部订单</string>
+  <string name="four_shouhou">我的售后</string>
+  <string name="four_shoucang">我的收藏</string>
+  <string name="four_kaquan">我的卡券</string>
+  <string name="four_yijian">意见反馈</string>
+  <string name="four_shezhi">我的设置</string>
+  <string name="four_daizhifu">待支付</string>
+  <string name="four_daizhifu_dd">待支付订单</string>
+  <string name="four_zhifu">去支付</string>
+  <string name="four_daishouhuo">待收货</string>
+  <string name="four_daishouhuo_queding">确定收货</string>
+  <string name="four_daishouhuo_queding_fbpj">发表评论</string>
+  <string name="four_daishouhuo_queding_pj">确定评价</string>
+  <string name="four_daishouhuo_dd">待收货订单</string>
+  <string name="four_dingdanxiangqing">订单详情</string>
+  <string name="four_dingdanxiangqing_xx">订单信息</string>
+  <string name="four_dingdanxiangqing_sp">商品信息</string>
+  <string name="four_dingdanxiangqing_sh">收货信息</string>
+  <string name="four_dingdanxiangqing_dd">订单金额</string>
+  <string name="four_dingdanxiangqing_dd_all">商品总金额</string>
+  <string name="four_dingdanxiangqing_dd_yf">运费</string>
+  <string name="four_dingdanxiangqing_pay">支付方式</string>
+  <string name="four_dingdanxiangqing_pay_style">货到付款</string>
+  <string name="four_dingdanxiangqing_dd_pay">应付金额</string>
+  <string name="four_dingdanxiangqing_wl">查看物流</string>
+  <string name="four_dingdanxiangqing_canle">取消订单</string>
+  <string name="four_dingdanxiangqing_del">删除订单</string>
+  <string name="four_dingdan_bh">订单编号</string>
+  <string name="four_dingdan_time">下单时间</string>
+  <string name="four_dingdan_zf">支付方式</string>
+  <string name="four_dingdan_state">订单状态</string>
+  <string name="four_dingdan_name">收货人</string>
+  <string name="four_dingdan_mobile">手机号码</string>
+  <string name="four_dingdan_address">收货地址</string>
+  <string name="four_daipinglun">待评论</string>
+  <string name="four_daipinglun_dd">待评论订单</string>
+  <string name="four_yijian_hint">请输入您的意见或建议，我们将不断优化</string>
+  <string name="four_yijian_hint1">[选填] 请输入您的手机号/邮箱</string>
+  <string name="four_yijian_kefu">客服热线：400-6063-111</string>
+  <string name="four_yijian_qq">Q群交流：445-959-108</string>
+  <string name="four_tijiao">提 交</string>
+  <string name="four_tishi">提示</string>
+  <string name="four_tishi_lw">111医药馆</string>
+  <string name="four_queding">确定</string>
+  <string name="four_tishi_btn_ok">拨打</string>
+  <string name="four_tishi_btn_canl">取消</string>
+  <string name="four_tianjia">添加优惠券</string>
+  <string name="four_kaquan_5">新会员专享-39减5</string>
+  <string name="four_kaquan_time">有效期：2016-06-13 - 2016-06-20</string>
+  <string name="four_kaquan_shiyong">使用说明</string>
+  <string name="four_shezhi_zhanghao">我的账号</string>
+  <string name="four_shezhi_zhanghao_tuxiang">我的头像</string>
+  <string name="four_shezhi_zhanghao_beijing">我的背景</string>
+  <string name="four_shezhi_zhanghao_nicheng">我的昵称：</string>
+  <string name="four_shezhi_zhanghao_name">我的姓名：</string>
+  <string name="four_shezhi_zhanghao_sex">性别：</string>
+  <string name="four_shezhi_zhanghao_age">年龄：</string>
+  <string name="four_shezhi_zhanghao_address">我的地址：</string>
+  <string name="four_shezhi_zhanghao_mobile">电话号码：</string>
+  <string name="four_shezhi_zhanghao_xiugai">修改</string>
+  <string name="four_shezhi_qingchu">清除图片缓存</string>
+  <string name="four_shezhi_kefu">联系客服</string>
+  <string name="four_shezhi_kefu_dialog">客服电话：400-6063-111</string>
+  <string name="four_shezhi_kefu_dialog_lw">刘先生：182-2997-1814</string>
+  <string name="four_shezhi_guanyu">关于我们</string>
+  <string name="four_shezhi_exit">退出登录</string>
+
+  <string name="four_jifen">领积分</string>
+  <string name="four_jifen_ling">明天可领取1积分</string>
+  <string name="four_jifen_sum">我的积分</string>
+  <string name="four_jifen_qiandao_ok">已签到</string>
+  <string name="four_jifen_qiandao">未签到</string>
+  <string name="four_shezhi_guanyu_111">111医药馆企业荣誉</string>
+  <string name="four_shezhi_guanyu_copy">Copyright c 2016 111yao.com</string>
+  <string name="four_shezhi_guanyu_d">第一个通过甘肃省GSP认证的医药企业\n
+  第一个率先走出甘肃，迈向首都开办连锁的本土企业\n
+    第一个获得兰州市“放心药房”样板店荣誉称号的企业\n
+    自2008年——2014年连续五年，进入“全国\n
+    医药零售百强”排行榜，已进入前40强
+  </string>
+  <string name="four_shezhi_guanyu_bb">For V2.1.8</string>
+  <string name="four_shezhi_guanyu_ml">要  健  康  ·  要  美  丽  ·  要  时  尚</string>
+
+
+
+  <string name="four_kaquan_shiyong_neirong">
+    一、优惠券/优惠码使用规则\n
+    （1）优惠券/优惠码不能兑换现金；\n
+    （2）每张优惠券/优惠码仅能使用一次，不找零，不退换\n
+    （3）使用优惠券/优惠码抵扣部分的货款不开具发票\n
+    （4）优惠券/优惠码应在券面载明的有效期内使用，过期作废\n
+    （5）如订单产生退货优惠券/优惠码将不能使用\n
+    （6）每笔订单只能使用一张优惠券\n
+    （7）部分促销活动包括但不限于：秒杀、限时抢购等形式不支持使用优惠券\n
+    （8）同一订单，如有某件商品不能使用优惠券，而其它商品可使用优惠券，则该订单可以使用优惠券，优惠金额
+    均摊到可使用优惠券的商品中\n
+    二、违反优惠券/优惠码使用规则的处理\n
+    111医药馆有权视情况选择冻结或作废相关用户持有的优惠券/优惠码的订单、取消该用户的用券资格、停止提供服务和/或注销该用户
+    账户并有权不接受该用户的再次注册申请：\n
+    （1）非以个人消费为目的而使用优惠券/优惠码的；\n
+    （2）伪造、购买、销售、转让优惠券/优惠码，或使用伪造、购买、转让的优惠券/优惠码的。
+  </string>
+</resources>

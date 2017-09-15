@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/head"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+  <LinearLayout
+      android:id="@+id/line1"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_back_normal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:text="修改地址"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+  </LinearLayout>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/line1"
+      android:layout_marginBottom="5dp"
+      android:layout_marginTop="5dp"
+      android:background="@android:color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/relative3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+      <TextView
+          android:id="@+id/txt_shouhuoren"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="15dp"
+          android:text="收货人"
+          android:textAppearance="?android:attr/textAppearance"
+          android:textSize="19dp"/>
+
+      <EditText
+          android:id="@+id/txt_name"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_marginLeft="50dp"
+          android:layout_marginTop="8dp"
+          android:layout_toRightOf="@id/txt_shouhuoren"
+          android:background="@null"
+          android:hint="请输入您的姓名"
+          android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/relative3"
+        android:layout_marginTop="5dp">
+
+      <TextView
+          android:id="@+id/txt_shouji"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="15dp"
+          android:text="手机"
+          android:textAppearance="?android:attr/textAppearance"
+          android:textSize="19dp"/>
+
+      <EditText
+          android:id="@+id/txt_phone"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_marginLeft="70dp"
+          android:layout_marginTop="8dp"
+          android:layout_toRightOf="@id/txt_shouji"
+          android:background="@null"
+          android:hint="请输入您的手机号"
+          android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative5"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/relative4"
+        android:layout_marginTop="5dp">
+
+      <TextView
+          android:id="@+id/txt_dizhi"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="15dp"
+          android:text="详细地址"
+          android:textAppearance="?android:attr/textAppearance"
+          android:textSize="19dp"/>
+
+      <EditText
+          android:id="@+id/txt_address"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_marginLeft="30dp"
+          android:layout_marginTop="8dp"
+          android:layout_toRightOf="@id/txt_dizhi"
+          android:background="@null"
+          android:hint="请输入您的详细地址,不少于5个字"
+          android:textSize="15sp"/>
+    </RelativeLayout>
+  </RelativeLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:layout_alignParentBottom="true"
+      android:background="@color/now_sale"
+      android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/update_quxiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_buy"
+        android:text="取消"
+        android:textColor="@android:color/holo_orange_dark"/>
+
+    <Button
+        android:id="@+id/upate_xiugai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_zhifu"
+        android:text="修改"
+        android:textColor="@color/now_sale"/>
+  </LinearLayout>
+</RelativeLayout>
+
